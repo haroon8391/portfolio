@@ -95,6 +95,18 @@ const Navbar = () => {
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
               <NavLink
+                to="/skills"
+                className={({ isActive }) =>
+                  isActive
+                    ? "block p-2 text-[#f9004d] font-bold"
+                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
+                }
+              >
+                Skills
+              </NavLink>
+            </li>
+            <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
+              <NavLink
                 to="/projects"
                 className={({ isActive }) =>
                   isActive
