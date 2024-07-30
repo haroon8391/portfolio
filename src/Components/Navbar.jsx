@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-4 fixed top-0 w-full">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <div className="text-white text-2xl font-bold">
