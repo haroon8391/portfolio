@@ -70,7 +70,6 @@ const Navbar = () => {
           <ul className="lg:flex lg:justify-center text-white text-lg w-full lg:w-auto">
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
               <NavLink
-                exact
                 to="/"
                 // className="hover:text-black hover:bg-slate-100 py-2 px-4 hover:rounded-lg flex items-center justify-center"
                 className={({ isActive }) =>
