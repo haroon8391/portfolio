@@ -70,3 +70,30 @@
 .animate-bounce {
     animation: bounce 1s infinite;
 }
+
+.projImages {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+@media (min-width: 640px) {
+    .projImages {
+        width: 80%;
+        /* Adjust for larger screens */
+    }
+}
+
+@media (min-width: 768px) {
+    .projImages {
+        width: 100%;
+        /* Further adjust for even larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .projImages {
+        width: 100%;
+        /* Final adjustment for large screens */
+    }
+}

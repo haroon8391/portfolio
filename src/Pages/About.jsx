@@ -1,10 +1,12 @@
 import React from "react";
-import Skills from "./Skills";
 
 const About = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 md:px-12 lg:px-24 py-8">
+      <div
+        id="about"
+        className="flex flex-col items-center justify-center lg:min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 md:px-12 lg:px-24 py-8"
+      >
         <div className="text-center lg:text-left lg:w-2/3">
           <h1 className="text-4xl font-extrabold mb-6 text-center">About Me</h1>
           <p className="text-lg mb-4">
@@ -30,7 +32,6 @@ const About = () => {
         </div>
       </div>
       <hr />
-      <Skills />
     </>
   );
 };

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4 fixed top-0 w-full">
+    <nav className="bg-gray-800 p-4 fixed top-0 z-10 w-full">
       <div className="container mx-auto flex flex-wrap justify-between items-center">
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <div className="text-white text-2xl font-bold">
@@ -22,7 +21,7 @@ const Navbar = () => {
                 type="button"
                 className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
-                aria-expanded="false"
+                aria-expanded={isOpen}
               >
                 <span className="sr-only">Open main menu</span>
                 {isOpen ? (
@@ -69,75 +68,54 @@ const Navbar = () => {
         >
           <ul className="lg:flex lg:justify-center text-white text-lg w-full lg:w-auto">
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <NavLink
-                to="/"
-                // className="hover:text-black hover:bg-slate-100 py-2 px-4 hover:rounded-lg flex items-center justify-center"
-                className={({ isActive }) =>
-                  isActive
-                    ? "block p-2 text-[#f9004d] font-bold"
-                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-                }
+              <a
+                href="#home"
+                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
                 Home
-              </NavLink>
+              </a>
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "block p-2 text-[#f9004d] font-bold"
-                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-                }
+              <a
+                href="#about"
+                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
                 About
-              </NavLink>
+              </a>
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <NavLink
-                to="/skills"
-                className={({ isActive }) =>
-                  isActive
-                    ? "block p-2 text-[#f9004d] font-bold"
-                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-                }
+              <a
+                href="#skills"
+                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
                 Skills
-              </NavLink>
+              </a>
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <NavLink
-                to="/projects"
-                className={({ isActive }) =>
-                  isActive
-                    ? "block p-2 text-[#f9004d] font-bold"
-                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-                }
+              <a
+                href="#projects"
+                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
                 Projects
-              </NavLink>
+              </a>
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "block p-2 text-[#f9004d] font-bold"
-                    : "block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-                }
+              <a
+                href="#contact"
+                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
                 Contact
-              </NavLink>
+              </a>
             </li>
           </ul>
           <div className="block text-center lg:hidden">
-            <button className="mt-4 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white">
+            <button className="mt-4 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300">
               Hire Me
             </button>
           </div>
         </div>
         <div className="hidden lg:block">
-          <button className="hireMe1 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white">
+          <button className="hireMe1 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300">
             Hire Me
           </button>
         </div>

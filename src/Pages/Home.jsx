@@ -1,12 +1,14 @@
 import React from "react";
 import TypingAnimation from "../Components/TypingAnimation";
 import image from "../Assets/image.jpeg";
-import About from "./About";
 
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 sm:p-12 md:p-16 lg:p-24">
+      <div
+        id="home"
+        className="flex flex-col lg:flex-row items-center justify-center lg:min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white py-24 sm:p-24 md:p-16 lg:p-24"
+      >
         <div className="lg:w-1/2 p-4 text-center lg:text-left">
           <h1 className="text-5xl font-extrabold mb-4">Hello,</h1>
           <h2 className="text-2xl font-bold mb-4">
@@ -29,7 +31,6 @@ const Home = () => {
         </div>
       </div>
       <hr />
-      <About />
     </>
   );
 };
