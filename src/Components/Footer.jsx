@@ -8,8 +8,8 @@ const Footer = () => {
       <footer className="bg-gray-800 text-white py-6">
         <div className="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row justify-between items-center">
           {/* Centered Text */}
-          <div className="flex justify-between items-center w-full">
-            <p className="text-xl font-bold text-[#f9004d]">
+          <div className="flex space-x-6">
+            <p className="text-xl font-bold text-[#f9004d] pb-4 sm:pb-0">
               Muhammad Haroon Ali
             </p>
           </div>
