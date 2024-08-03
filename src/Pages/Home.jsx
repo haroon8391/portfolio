@@ -17,10 +17,21 @@ const Home = () => {
               <TypingAnimation />
             </span>
           </h2>
-          <p className="text-lg font-semibold">
-            Welcome to my portfolio website. Here you can find information about
-            my projects, skills, and experience.
+          <p className="text-lg font-semibold leading-relaxed ">
+            Welcome to my digital corner! Dive into my journey as a passionate
+            Software Engineer and MERN stack developer. Explore my projects,
+            skills, and experiences. Let's connect and create something amazing
+            together!
           </p>
+          <div className="mt-10">
+            <a
+              href="../Assets/resume.pdf"
+              download
+              className="inline-block bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
         <div className="lg:w-1/2 p-4 flex justify-center lg:justify-end">
           <img

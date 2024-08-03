@@ -108,16 +108,22 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <div className="block text-center lg:hidden">
-            <button className="mt-4 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300">
+          <div className="block text-center lg:hidden mt-6">
+            <a
+              className="bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300"
+              href="#contact"
+            >
               Hire Me
-            </button>
+            </a>
           </div>
         </div>
         <div className="hidden lg:block">
-          <button className="hireMe1 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300">
+          <a
+            className="hireMe1 bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300"
+            href="#contact"
+          >
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
     </nav>
