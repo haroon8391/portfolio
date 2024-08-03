@@ -25,7 +25,7 @@ const Home = () => {
           </p>
           <div className="mt-10">
             <a
-              href="../Assets/resume.pdf"
+              href="/resume.pdf"
               download
               className="inline-block bg-slate-100 text-black font-bold py-2 px-4 rounded-lg border-2 border-transparent hover:border-white hover:bg-gray-800 hover:text-white transition duration-300"
             >
