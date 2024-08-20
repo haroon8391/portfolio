@@ -5,8 +5,8 @@ import image3 from "../Assets/picture3.jpg";
 import image4 from "../Assets/picture4.bmp";
 import image5 from "../Assets/picture5.jpg";
 import image6 from "../Assets/picture6.jpg";
-import image7 from "../Assets/picture7.jpg";
 import image8 from "../Assets/picture8.jpg";
+import image9 from "../Assets/picture9.jpg";
 
 const projects = [
   {
@@ -31,6 +31,13 @@ const projects = [
     technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
+    name: "Real Estate Hub Web App",
+    image: image9,
+    projectLink: "https://github.com/haroon8391/Real-Estate-app",
+    githubLink: "https://github.com/haroon8391/Real-Estate-app",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+  },
+  {
     name: "MERN Stack Ecommerce Website",
     image: image4,
     projectLink: "https://github.com/haroon8391/StoreDash",
@@ -49,13 +56,6 @@ const projects = [
     image: image6,
     projectLink: "https://github.com/haroon8391/NewsBeat",
     githubLink: "https://github.com/haroon8391/NewsBeat",
-    technologies: ["React", "Javascript", "Bootstrap"],
-  },
-  {
-    name: "Weather App",
-    image: image7,
-    projectLink: "https://github.com/haroon8391/WeatherApp",
-    githubLink: "https://github.com/haroon8391/WeatherApp",
     technologies: ["React", "Javascript", "Bootstrap"],
   },
   {
