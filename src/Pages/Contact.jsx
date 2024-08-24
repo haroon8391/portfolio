@@ -1,6 +1,31 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
 const Contact = () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", accessKey);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast.success("Message sent successfully!");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      toast.error("Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -10,7 +35,10 @@ const Contact = () => {
         <h1 className="text-4xl font-extrabold mb-12 text-center">
           Contact Me
         </h1>
-        <form className="bg-gray-700 rounded-lg shadow-lg p-8 w-full max-w-lg mx-auto">
+        <form
+          className="bg-gray-700 rounded-lg shadow-lg p-8 w-full max-w-lg mx-auto"
+          onSubmit={handleSubmit}
+        >
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -19,6 +47,7 @@ const Contact = () => {
               Name
             </label>
             <input
+              name="name"
               type="text"
               id="name"
               className="mt-1 p-2 block w-full rounded-md bg-gray-800 border-gray-600 text-white"
@@ -33,6 +62,7 @@ const Contact = () => {
               Email
             </label>
             <input
+              name="email"
               type="email"
               id="email"
               className="mt-1 p-2 block w-full rounded-md bg-gray-800 border-gray-600 text-white"
@@ -47,6 +77,7 @@ const Contact = () => {
               Message
             </label>
             <textarea
+              name="message"
               id="message"
               rows="5"
               className="mt-1 p-2 block w-full rounded-md bg-gray-800 border-gray-600 text-white"
@@ -62,6 +93,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );
