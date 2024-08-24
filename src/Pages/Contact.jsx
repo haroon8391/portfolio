@@ -1,14 +1,13 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const accessKey = process.env.REACT_APP_ACCESS_KEY;
 
 const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", accessKey);
+    formData.append("access_key", "99815abc-646f-4b34-8fdb-72b52a6375b4");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
