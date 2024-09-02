@@ -26,9 +26,10 @@ const projects = [
   {
     name: "Blog Website",
     image: image3,
-    projectLink: "https://github.com/haroon8391/Insightful_Blogs",
+    projectLink:
+      "http://blogify-env.eba-tsfekyps.ap-south-1.elasticbeanstalk.com/",
     githubLink: "https://github.com/haroon8391/Insightful_Blogs",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    technologies: ["React", "Node.js", "Express", "MongoDB", "AWS EB"],
   },
   {
     name: "Real Estate Hub Web App",
