@@ -235,7 +235,8 @@ const ShaderMaterial = ({ source, uniforms, maxFps = 60 }) => {
     });
 
     return materialObject;
-  }, [size.width, size.height, source]);
+    // eslint-disable-next-line
+  }, [size.width, size.height, source, getUniforms]);
 
   return (
     <mesh ref={ref}>
