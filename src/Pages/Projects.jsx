@@ -13,7 +13,7 @@ const projects = [
     name: "Job Portal",
     image: image10,
     projectLink:
-      "https://vercel.com/haroon8391s-projects/job-portal-deployment",
+      "https://job-portal-deployment-haroon8391s-projects.vercel.app",
     githubLink: "https://github.com/haroon8391/complete-job-portal",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
