@@ -85,14 +85,6 @@ const Navbar = () => {
             </li>
             <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
               <a
-                href="#skills"
-                className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="block lg:inline-block text-center lg:px-4 py-2 lg:py-0">
-              <a
                 href="#projects"
                 className="block p-2 rounded-lg hover:bg-slate-100 hover:text-black"
               >
