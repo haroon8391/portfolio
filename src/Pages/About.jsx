@@ -1,6 +1,7 @@
 import React, { useTransition, useState } from "react";
 import TabButton from "../Components/TabButton";
 import AboutImage from "../Assets/about-image.png";
+import { Link } from "react-router-dom";
 
 const TAB_DATA = [
   {
@@ -46,9 +47,30 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>DSA in Java ( Udemy ) </li>
-        <li>Frontend Developer ( HackerRank )</li>
-        <li>Web Development ( IBM )</li>
+        <li className="underline hover:font-bold">
+          <Link
+            target="_blank"
+            to="https://www.udemy.com/certificate/UC-23baabfb-0ef8-426f-b83f-00ff05a208d5/"
+          >
+            DSA in Java ( Udemy ){" "}
+          </Link>
+        </li>
+        <li className="hover:font-bold underline">
+          <Link
+            target="_blank"
+            to="https://www.hackerrank.com/certificates/dadecc4dcb22"
+          >
+            Frontend Developer ( HackerRank )
+          </Link>
+        </li>
+        <li className="hover:font-bold underline">
+          <Link
+            target="_blank"
+            to="https://www.credly.com/badges/ff427908-5c9f-47b4-bb9c-3552ff1c58ae/linked_in_profile"
+          >
+            Web Development ( IBM )
+          </Link>
+        </li>
       </ul>
     ),
   },
