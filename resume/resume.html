@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Muhammad Haroon Ali — Resume</title>
+<style>
+  @page { size: Letter; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; }
+  body { font-family: "Liberation Serif", "Times New Roman", Times, serif; font-size: 10.5pt; line-height: 1.32; color: #000; margin: 0; }
+  a { color: #1a0dab; text-decoration: none; }
+  h1 { text-align: center; font-size: 21pt; letter-spacing: 0.04em; margin: 0 0 3px; font-weight: 700; }
+  .contact { text-align: center; font-size: 10pt; margin-bottom: 10px; }
+  h2 { font-size: 11pt; letter-spacing: 0.03em; text-transform: uppercase; border-bottom: 1px solid #000; margin: 12px 0 5px; padding-bottom: 1px; font-weight: 700; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .row b { font-weight: 700; }
+  .row i { font-style: italic; }
+  .entry { margin-top: 6px; break-inside: avoid-page; }
+  .entry:first-of-type { margin-top: 2px; }
+  ul { margin: 2px 0 0; padding-left: 20px; }
+  li { margin: 1.5px 0; }
+  p { margin: 0; }
+  .skills li { margin: 2px 0; }
+</style>
+</head>
+<body>
+  <h1>MUHAMMAD HAROON ALI</h1>
+  <div class="contact">
+    haroon8391@gmail.com | +92 301 9805140 |
+    <a href="https://github.com/haroon8391">github.com/haroon8391</a> |
+    <a href="https://www.linkedin.com/in/mharoonali/">linkedin.com/in/mharoonali</a>
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p>Full Stack Developer with 3 years of experience building scalable, production-grade web applications using Next.js, NestJS, Node.js, Python/FastAPI and the MERN stack. Skilled in designing RESTful APIs, microservices architecture and real-time systems, with a strong background in AI agent systems, AWS cloud services, Dockerized deployments, CI/CD pipelines and high-performance distributed applications.</p>
+
+  <h2>Technical Skills</h2>
+  <ul class="skills">
+    <li><b>Frontend:</b> React.js, Next.js, TanStack Start, Redux Toolkit, React Query, JavaScript (ES6+), TypeScript, Tailwind CSS, HTML5, CSS3</li>
+    <li><b>Backend:</b> Python, FastAPI, Node.js, NestJS, Express.js, REST APIs, GraphQL</li>
+    <li><b>Databases:</b> PostgreSQL, MongoDB, Prisma, Redis, Firebase</li>
+    <li><b>AI &amp; Agent Systems:</b> OpenAI Realtime API, Voice-to-Voice AI Agents (WebRTC), CrewAI, LangChain</li>
+    <li><b>DevOps &amp; Cloud:</b> Docker, Git, GitHub Actions, GitLab CI/CD, CI/CD Pipelines, AWS (EC2, VPC, S3, Lambda, IAM, RDS)</li>
+    <li><b>Coding &amp; Automation:</b> Claude Code, Cursor, n8n, Zapier, Playwright</li>
+  </ul>
+
+  <h2>Professional Experience</h2>
+
+  <div class="entry">
+    <div class="row"><b>Full Stack AI Developer</b><span>Jul 2026 – Present</span></div>
+    <div class="row"><span>Rissox</span><i>Islamabad</i></div>
+    <ul>
+      <li>Building PakPays, a fintech operations and reconciliation platform with a controlled, auditable transaction workflow</li>
+      <li>Built the NestJS REST API on PostgreSQL and Prisma, with Swagger documentation and versioned endpoints</li>
+      <li>Built a bank-statement import pipeline that parses Excel and HTML exports with per-bank rules, prevents duplicate rows, and stores originals in private S3 served via signed URLs</li>
+      <li>Implemented RBAC with department- and resource-level (ABAC) access scoping, plus an audit trail of user actions and status changes</li>
+      <li>Built the React 19 + TypeScript frontend with TanStack Query and Table, Tailwind CSS 4, and role-based screens</li>
+      <li>Set up Docker and GitLab CI/CD pipelines deploying to AWS, with Sentry error monitoring</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><b>Full Stack Developer</b><span>Aug 2025 – Jul 2026</span></div>
+    <div class="row"><span>Centrox AI</span><i>Gulberg Greens, Islamabad</i></div>
+    <ul>
+      <li>Developed and deployed scalable full-stack applications supporting 10k+ active users in production</li>
+      <li>Architected and built REST APIs and backend services powering the platform, ensuring high availability and modular design</li>
+      <li>Optimized backend performance with Redis caching and query optimization, reducing API response time from 1.2s to 280ms (60% improvement)</li>
+      <li>Built and integrated 3 shared microservices (authentication, payments, notifications) reused across multiple product modules</li>
+      <li>Established role-based access control (RBAC) for secure, permission-based user management across the platform</li>
+      <li>Built CI/CD pipelines with GitHub Actions for automated testing and deployments, cutting deployment failures by 90%</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><b>Full-Stack Software Engineer</b><span>Jun 2024 – Aug 2025</span></div>
+    <div class="row"><span>BeHope</span><i>I-8, Islamabad</i></div>
+    <ul>
+      <li>Developed 20+ scalable REST APIs using Node.js and Express.js for an accounting platform</li>
+      <li>Built an event-driven invoice ingestion pipeline using the Gmail API, Pub/Sub and Adobe APIs, reducing manual invoice handling by 70% and improving processing accuracy to 95%</li>
+      <li>Integrated QuickBooks APIs to streamline expense tracking and reporting, consolidating 500+ monthly transactions into real-time financial dashboards</li>
+      <li>Re-engineered the order-processing workflow end-to-end, cutting processing time by 90% and improving the delivery cycle, while designing a modular backend architecture for scalability</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="row"><b>PakPays - Fintech Operations &amp; Reconciliation Platform</b><span>NestJS, React, PostgreSQL</span></div>
+    <ul>
+      <li>Implemented RBAC (Super Admin, Admin, Operator) with ABAC-style scoping by department, broker and bank-account assignment, enforced in the service layer</li>
+      <li>Used ACID-compliant PostgreSQL transactions (Prisma) for multi-step writes so related records are committed or rolled back together</li>
+      <li>Built statement import with duplicate protection and Unclaimed / Tagged / Flagged review queues, with filtering and pagination across transactions</li>
+      <li>Implemented full-text search over transactions using PostgreSQL GIN indexes</li>
+      <li>Added payload encryption on sensitive endpoints, request rate limiting, and full audit history of status changes</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><b>AI Listener - Mental Health App</b><a href="https://ailistener.ai">ailistener.ai</a></div>
+    <ul>
+      <li>Built a microservices-based backend using NestJS, MongoDB and Redis caching, supporting a scalable architecture for 10k+ users</li>
+      <li>Built cron jobs and background workers for scheduled processing, notification delivery and data synchronization, with Firebase Authentication and RBAC for secure multi-role access</li>
+      <li>Optimized database performance using MongoDB indexing and aggregation pipelines across 40+ collections</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><b>Rankpage - Social Media Ranking Platform</b><a href="https://staging.rankpage.com">staging.rankpage.com</a></div>
+    <ul>
+      <li>Built a social platform for rank-based posts with interactive polls and pick'em predictions, plus a gamified expert system where users earn points and unlock "Expert" status</li>
+      <li>Integrated Stripe payment workflows for premium features and monetization</li>
+      <li>Built with TanStack Start and TanStack Query, Keycloak for authentication, and a Node.js/Express backend with MongoDB</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><b>BeHope - Healthcare E-Commerce Platform</b><a href="https://behope.ca">behope.ca</a></div>
+    <ul>
+      <li>Built an event-driven order processing system automating the workflow from order placement through supplier communication and fulfillment</li>
+      <li>Built an invoice extraction pipeline with the Adobe PDF Extract API and Gmail/Pub/Sub triggers, syncing parsed invoice data into QuickBooks and eliminating manual invoice entry</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="row"><b>Bachelors in Software Engineering</b><span>Oct 2020 – May 2024</span></div>
+  <div class="row"><span>National University of Sciences and Technology (NUST)</span><span>CGPA: 3.42</span></div>
+</body>
+</html>

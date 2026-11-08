@@ -7,3 +7,10 @@
 .env
 
 
+
+# next
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
